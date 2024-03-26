@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Poll System</h1>
+        <h3 class="sub-title">What is your favorite programming language</h3>
+        <div class="languages">
+            <p id="js" data-language="JavaScript">JavaScript</p>
+            <p id="py" data-language="Python">Python</p>
+            <p id="java" data-language="Java">Java</p>
+            <p id="c" data-language="C">C++</p>
+        </div>
+        <button id="submit">Submit Vote</button>
+        <div class="result">
+            <div class="row">
+                <p class="language">JavaScript</p>
+                <div class="glass">
+                    <div class="indicator" id="indicator-js"></div>
+                </div>
+                <p class="poll" id="poll-js">0.00%</p>
+            </div>
+            <div class="row">
+                <p class="language">Python</p>
+                <div class="glass">
+                    <div class="indicator" id="indicator-py"></div>
+                </div>
+                <p class="poll" id="poll-py">0.00%</p>
+            </div>
+            <div class="row">
+                <p class="language">Java</p>
+                <div class="glass">
+                    <div class="indicator" id="indicator-java"></div>
+                </div>
+                <p class="poll" id="poll-java">0.00%</p>
+            </div>
+            <div class="row">
+                <p class="language">C++</p>
+                <div class="glass">
+                    <div class="indicator" id="indicator-c"></div>
+                </div>
+                <p class="poll" id="poll-c">0.00%</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

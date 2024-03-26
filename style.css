@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f5f5;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    height: 560px;
+}
+
+.title {
+    padding: 30px 0 10px;
+}
+
+.sub-title {
+    padding: 20px;
+}
+
+h1,
+h3,
+.result p {
+    color: #C2387B;
+}
+
+.languages p {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.languages .active {
+    background-color: #e8549c;
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: #e8549c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #C2387B;
+}
+
+button:focus-visible {
+    outline: none;
+}
+
+.result {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.result .row {
+    display: flex;
+    align-items: center;
+}
+
+.result .row .language {
+    flex: 100px 0 0;
+}
+
+.result .row .glass {
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 16px;
+    margin: 0 10px;
+    line-height: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.result .poll {
+    font-weight: bold;
+}
+
+.indicator {
+    background: #C2387B;
+    width: 0%;
+    border-radius: 20px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
